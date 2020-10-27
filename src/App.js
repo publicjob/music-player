@@ -1,5 +1,6 @@
 import React from 'react'
+import Router from './route'
 
-const App = () =>(<div>11</div>)
+const App = () =>(<Router/>)
 
 export default App
