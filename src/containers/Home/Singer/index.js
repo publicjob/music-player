@@ -1,11 +1,18 @@
 import React from 'react'
-import { SingerWrapper } from './style'
+import { SingerWrapper, SingerHeader, SingerBody } from './style'
+import Back from '../../../common/components/Back'
 
-const Singer = () => {
+const Singer = ({ history }) => {
+  const handleBack = () => {
+    history.goBack()
+  }
   return (
     <SingerWrapper>
-      Singer
-    </SingerWrapper>
+    <SingerHeader>
+      <Back onBack={handleBack}>返回</Back>
+    </SingerHeader>
+    <SingerBody></SingerBody>
+  </SingerWrapper>
   )
 }
 

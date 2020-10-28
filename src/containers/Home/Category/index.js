@@ -1,11 +1,18 @@
 import React from 'react'
-import { ClassWrapper } from './style'
+import { CategoryWrapper, CategoryHeader, CategoryBody } from './style'
+import Back from '../../../common/components/Back'
 
-const Category = () => {
+const Category = ({ history }) => {
+  const handleBack = () => {
+    history.goBack()
+  }
   return (
-    <ClassWrapper>
-      Class
-    </ClassWrapper>
+    <CategoryWrapper>
+      <CategoryHeader>
+        <Back onBack={handleBack}>返回</Back>
+      </CategoryHeader>
+      <CategoryBody></CategoryBody>
+    </CategoryWrapper>
   )
 }
 

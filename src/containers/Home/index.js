@@ -7,6 +7,9 @@ import { connect } from 'react-redux'
 import * as HomeActionCreators from './store/actionCreators'
 import { Route } from 'react-router-dom'
 import Song from './Song'
+import Singer from './Singer'
+import Video from './Video'
+import Category from './Category'
 
 //配置列表项
 const listConfig = [
@@ -32,6 +35,24 @@ const listConfig = [
   },
 ]
 
+const routeConfig = [
+  {
+    path: '/song',
+    component: Song,
+  },
+  {
+    path: '/siner',
+    component: Singer,
+  },
+  {
+    path: '/video',
+    component: Video,
+  },
+  {
+    path: '/category',
+    component: Category,
+  }
+]
 const Home = (props) => {
   const { bannerList, get_bannerList, go_song, go_singer, go_video, go_category } = props
   useEffect(() => {
@@ -55,7 +76,7 @@ const Home = (props) => {
         <ListItem title={item.title} icon={item.icon} key={index} onClick={(e) => handleListItemClick(e, item.title)} />
       ))}
       {
-        <Route path={'/song'} component={Song}/>
+        routeConfig.map((route, index) => ( <Route path={route.path} component={route.component} key={index}/>))
       }
     </HomeWrapper>
   )

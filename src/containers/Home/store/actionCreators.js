@@ -18,7 +18,7 @@ export const go_singer = () => {
 }
 
 export const go_video = () => {
-  return push('/vedio')
+  return push('/video')
 }
 
 export const go_category = () => {

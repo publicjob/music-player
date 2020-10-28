@@ -1,10 +1,18 @@
 import React from 'react'
-import { VideoWrapper } from './style'
+import { VideoWrapper, VideoHeader, VideoBody } from './style'
+import Back from '../../../common/components/Back'
 
-const Video = () => {
+
+const Video = ({ history }) => {
+  const handleBack = () => {
+    history.goBack()
+  }
   return (
     <VideoWrapper>
-      Video
+      <VideoHeader>
+        <Back onBack={handleBack}>返回</Back>
+      </VideoHeader>
+      <VideoBody></VideoBody>
     </VideoWrapper>
   )
 }

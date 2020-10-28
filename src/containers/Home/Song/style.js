@@ -9,7 +9,7 @@ const SongWrapper = styled.div`
   background-color: #000000;
 `
 const SongHeader = styled.div`
-  margin: 11px 5px;
+  margin: 10px 5px;
 `
 const SongBody = styled.div`
 
