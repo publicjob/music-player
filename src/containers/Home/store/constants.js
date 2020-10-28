@@ -1,0 +1,9 @@
+//获取轮播图
+const GET_BANNERLIST = 'GET_BANNERLIST'
+//设置轮播图
+const SET_BANNERLIST = 'SET_BANNERLIST'
+
+export {
+  GET_BANNERLIST,
+  SET_BANNERLIST
+}

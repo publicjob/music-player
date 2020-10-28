@@ -12,7 +12,7 @@ const Router = () => {
       {/* 定义路由视图 */}
       <ViewWrapper>
       {routes.map((route, index) => {
-        if (route.path === '/') return <Route path="/" exact render={() => (<Redirect to="/home" />)} />
+        if (route.path === '/') return <Route path="/" exact render={() => (<Redirect to="/home" />)} key={index}/>
         return <Route path={route.path} component={route.component} key={index} />
       })}
       </ViewWrapper>
