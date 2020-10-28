@@ -13,3 +13,12 @@ export const get_bannerList_request = () => {
       .catch(err => reject(err))
   })
 }
+
+//获取歌单列表
+export const get_musicList_request = () => {
+  return new Promise((resolve, reject) => {
+    instance.get(HOME_URL.MUSICLIST)
+    .then(res => resolve(res))
+    .catch(err => reject(err))
+  })
+}
