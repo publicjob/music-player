@@ -31,7 +31,7 @@ const listConfig = [
 ]
 
 const Home = (props) => {
-  const { bannerList, get_bannerList } = props
+  const { bannerList, get_bannerList, go_home } = props
   useEffect(() => {
     get_bannerList()
   }, [])
@@ -40,7 +40,7 @@ const Home = (props) => {
       <HeaderLine title="首页" shape="circle" />
       <Slider bannerList={bannerList}/>
       {listConfig.map((item, index) => (
-        <ListItem to={item.to} title={item.title} icon={item.icon} key={index} />
+        <ListItem title={item.title} icon={item.icon} key={index} onClick={go_home}/>
       ))}
     </HomeWrapper>
   )

@@ -16,7 +16,7 @@ const Slider = (props) => {
   const slides = []
   for (let i = 0; i < bannerList.length; i++) {
     slides.push(<SwiperSlide key={`slide-${i}`} tag="li">
-      <img src={`https://picsum.photos/id/${i + 1}/500/300`} alt={`Slide-${i}`} />
+      <img src={bannerList[i].imageUrl} alt={`Slide-${i}`} style={{width:'100%', height:'100%'}}/>
     </SwiperSlide>)
   }
   return (

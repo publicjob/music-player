@@ -2,19 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './iconfont.css'
 import { ListItemWrapper, Icon, Title, Arrow,TitleWrapper } from './style'
-import { NavLink } from 'react-router-dom'
 
 const ListItem = (props) => {
-  const { icon, title, to } = props
+  const { icon, title, onClick } = props
   return (
-    <ListItemWrapper>
+    <ListItemWrapper onClick={onClick}>
       <TitleWrapper>
       <Icon className={`iconfont icon-${icon}`}></Icon>
       <Title>{title}</Title>
       </TitleWrapper>
-      <NavLink to={to}>
-        <Arrow className="iconfont icon-youjiantou"></Arrow>
-      </NavLink>
+      <Arrow className="iconfont icon-youjiantou"></Arrow>
     </ListItemWrapper>
   )
 }
@@ -23,14 +20,14 @@ const ListItem = (props) => {
 ListItem.propTypes = {
   icon: PropTypes.string,
   title: PropTypes.string,
-  to: PropTypes.string,
+  onClick: PropTypes.func
 }
 
 //定义ListItem的默认参数
 ListItem.defaultProps = {
   icon: 'gedan',
   title: '歌单列表',
-  to: ''
+  onClick: e => e
 }
 
 export default ListItem

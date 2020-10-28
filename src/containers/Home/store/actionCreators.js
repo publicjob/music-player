@@ -1,5 +1,6 @@
 import { get_bannerList_request } from '../api'
 import * as types from './constants'
+import { push } from 'connected-react-router'
 
 export const set_bannerList = (bannerList) => {
   return {
@@ -8,6 +9,9 @@ export const set_bannerList = (bannerList) => {
   }
 }
 
+export const go_home = () => {
+  return push('/user')
+}
 export const get_bannerList = () => {
   return async (dispatch) => {
     const { data: response } = await get_bannerList_request()
