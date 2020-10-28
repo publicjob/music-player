@@ -9,9 +9,22 @@ export const set_bannerList = (bannerList) => {
   }
 }
 
-export const go_home = () => {
-  return push('/user')
+export const go_song = () => {
+  return push('/song')
 }
+
+export const go_singer = () => {
+  return push('/singer')
+}
+
+export const go_video = () => {
+  return push('/vedio')
+}
+
+export const go_category = () => {
+  return push('/category')
+}
+
 export const get_bannerList = () => {
   return async (dispatch) => {
     const { data: response } = await get_bannerList_request()

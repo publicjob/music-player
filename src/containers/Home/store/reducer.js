@@ -11,7 +11,6 @@ const HomeReducer = (state = initState, { type, payload }) => {
         ...state,
         bannerList: payload
       }
-      console.log(newState)
       return newState
     }
     default: return state

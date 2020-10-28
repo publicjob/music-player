@@ -27,7 +27,7 @@ const Slider = (props) => {
       autoplay
       loop
       onSlideChange={(swiper) => {
-        console.log(swiper.activeIndex)
+        // console.log(swiper.activeIndex)
       }}
     >
       {slides}
