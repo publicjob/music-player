@@ -6,7 +6,7 @@ const ListItemWrapper = styled.div`
   justify-content:space-between;
   align-items: center;
   margin: 0 15px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding: 0 10px;
   height: 50px;
   background: rgba(255, 255, 255, 0.05);
