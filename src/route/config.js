@@ -3,10 +3,10 @@ import Hot from '../containers/Hot'
 import Search from '../containers/Search'
 import Radio from '../containers/Radio'
 import User from '../containers/User'
-import Song from '../containers/Home/Song'
-import Singer from '../containers/Home/Singer'
-import Video from '../containers/Home/Video'
-import Category from '../containers/Home/Category'
+import Song from '../containers/Song'
+import Singer from '../containers/Singer'
+import Video from '../containers/Video'
+import Album from '../containers/Album'
 
 const routes = [
   {
@@ -15,7 +15,7 @@ const routes = [
   },
   {
     path: '/home',
-    component: Home
+    component: Home,
   },
   {
     path: '/hot',
@@ -46,8 +46,8 @@ const routes = [
     component: Video
   },
   {
-    path: '/category',
-    component: Category
+    path: '/album',
+    component: Album
   }
 ]
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { VideoWrapper, VideoHeader, VideoBody } from './style'
-import Back from '../../../common/components/Back'
+import Back from '../../common/components/Back'
 
 
 const Video = ({ history }) => {

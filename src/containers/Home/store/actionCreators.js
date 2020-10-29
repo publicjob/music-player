@@ -21,8 +21,8 @@ export const go_video = () => {
   return push('/video')
 }
 
-export const go_category = () => {
-  return push('/category')
+export const go_album = () => {
+  return push('/album')
 }
 
 export const get_bannerList = () => {

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const CategoryWrapper = styled.div`
+const AlbumWrapper = styled.div`
   position: absolute;
   width: 100%;
   height: 100%;
@@ -8,14 +8,14 @@ const CategoryWrapper = styled.div`
   color: #fff;
   background-color: #000000;
 `
-const CategoryHeader = styled.div`
+const AlbumHeader = styled.div`
   margin: 10px 5px;
 `
-const CategoryBody = styled.div`
+const AlbumBody = styled.div`
 
 `
 export {
-  CategoryWrapper,
-  CategoryHeader, 
-  CategoryBody
+  AlbumWrapper,
+  AlbumHeader, 
+  AlbumBody
 }

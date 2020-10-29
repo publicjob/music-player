@@ -1,6 +1,6 @@
 import React from 'react'
 import { SongWrapper, SongHeader, SongBody } from './style'
-import Back from '../../../common/components/Back'
+import Back from '../../common/components/Back'
 
 
 const Song = ({ history }) => {

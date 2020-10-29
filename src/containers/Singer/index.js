@@ -1,6 +1,6 @@
 import React from 'react'
 import { SingerWrapper, SingerHeader, SingerBody } from './style'
-import Back from '../../../common/components/Back'
+import Back from '../../common/components/Back'
 
 const Singer = ({ history }) => {
   const handleBack = () => {
